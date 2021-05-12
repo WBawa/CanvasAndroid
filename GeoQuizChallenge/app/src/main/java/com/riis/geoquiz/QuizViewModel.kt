@@ -6,6 +6,7 @@ private const val TAG = "QuizViewModel"
 
 class QuizViewModel : ViewModel() {
     var answers = HashMap<Question, Boolean>()
+    var questionsCheated = HashMap<Question, Boolean>()
     private var rightAnswers: Float = 0f
     var isCheater = false
 

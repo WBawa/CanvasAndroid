@@ -38,8 +38,7 @@ class MainActivity : AppCompatActivity() {
         val currentIndex = savedInstanceState?.getInt(KEY_INDEX, 0) ?: -1
         quizViewModel.currentIndex = currentIndex
 
-        val currentAnswers =
-            savedInstanceState?.getSerializable(ANSWERS_KEY) ?: quizViewModel.answers
+        val currentAnswers = savedInstanceState?.getSerializable(ANSWERS_KEY) ?: quizViewModel.answers
         quizViewModel.answers = currentAnswers as HashMap<Question, Boolean>
 
         trueButton = findViewById(R.id.true_button)
@@ -81,12 +80,13 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (resultCode != Activity.RESULT_OK) {
+        if (resultCode != Activity.RESULT_OK ) {
             return
         }
 
         if (requestCode == REQUEST_CODE_CHEAT) {
-            quizViewModel.answers[quizViewModel.currentQuestion] = data?.getBooleanExtra(EXTRA_ANSWER_SHOWN, false) ?: false
+            quizViewModel.isCheater = data?.getBooleanExtra(EXTRA_ANSWER_SHOWN, false) ?: false
+            quizViewModel.questionsCheated[quizViewModel.currentQuestion] = quizViewModel.isCheater
         }
     }
 
@@ -145,9 +145,9 @@ class MainActivity : AppCompatActivity() {
     private fun checkAnswer(userAnswer: Boolean) {
 
         val correctAnswer = quizViewModel.currentQuestionAnswer
-        Log.d(TAG, quizViewModel.answers[quizViewModel.currentQuestion].toString())
+
         val messageResId = when {
-            quizViewModel.answers[quizViewModel.currentQuestion] == true -> R.string.judgment_toast
+            quizViewModel.questionsCheated[quizViewModel.currentQuestion] == true -> R.string.judgment_toast
             userAnswer == correctAnswer -> R.string.correct_toast
             else -> R.string.incorrect_toast
         }
@@ -155,6 +155,8 @@ class MainActivity : AppCompatActivity() {
         if (userAnswer == quizViewModel.currentQuestionAnswer) {
             quizViewModel.addRightAnswer()
         }
+
+        quizViewModel.currentAnswers[quizViewModel.currentQuestion] = userAnswer
 
         disableButtons()
 
@@ -193,6 +195,6 @@ class MainActivity : AppCompatActivity() {
             return
         }
         enableButtons()
-        Log.d(TAG, "Check if answered")
+        Log.d(TAG, "got here")
     }
 }

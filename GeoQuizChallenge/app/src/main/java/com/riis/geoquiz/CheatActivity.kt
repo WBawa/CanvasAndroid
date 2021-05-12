@@ -3,10 +3,11 @@ package com.riis.geoquiz
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 
 private const val EXTRA_ANSWER_IS_TRUE = "com.riis.geoquiz.answer_is_true"
@@ -17,6 +18,7 @@ class CheatActivity : AppCompatActivity() {
 
     private lateinit var answerTextView: TextView
     private lateinit var showAnswerButton: Button
+
 
 
     private val cheatViewModel: CheatViewModel by lazy {
@@ -45,8 +47,8 @@ class CheatActivity : AppCompatActivity() {
     }
 
     companion object {
-        fun newIntent(packageContext: Context, answerIsTrue: Boolean): Intent {
-            return Intent(packageContext, CheatActivity::class.java).apply {
+        fun newIntent(packageContext: Context, answerIsTrue: Boolean) : Intent {
+            return Intent(packageContext, CheatActivity::class.java).apply{
                 putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue)
             }
         }
