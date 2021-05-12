@@ -29,9 +29,9 @@
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="72dp"
                 android:hint="@string/first_name"
-                android:ems="15"/>
+                android:ems="13"/>
     </LinearLayout>
 
     <LinearLayout
@@ -48,9 +48,9 @@
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="73dp"
                 android:hint="@string/last_name"
-                android:ems="15"/>
+                android:ems="13"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,9 +67,9 @@
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="98dp"
                 android:hint="@string/school"
-                android:ems="15"/>
+                android:ems="13"/>
     </LinearLayout>
 
     <LinearLayout
@@ -81,14 +81,14 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/last_name" />
+                android:text="@string/year_of_graduation" />
 
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:hint="@string/last_name"
-                android:ems="15"/>
+                android:hint="@string/year_of_graduation"
+                android:ems="13"/>
     </LinearLayout>
 
 
