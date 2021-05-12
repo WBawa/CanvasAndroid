@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BioGen</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="school">School</string>
+    <string name="year_of_graduation">Year of Graduation</string>
+    <string name="degree">Degree</string>
+    <string name="create_your_bio">Create Your Bio!!</string>
+</resources>
