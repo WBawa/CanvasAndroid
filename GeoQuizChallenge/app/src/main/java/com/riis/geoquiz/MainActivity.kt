@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
         val currentIndex = savedInstanceState?.getInt(KEY_INDEX, 0) ?: -1
         quizViewModel.currentIndex = currentIndex
 
-        val currentAnswers = savedInstanceState?.getSerializable(ANSWERS_KEY) ?: quizViewModel.answers
+        val currentAnswers =
+            savedInstanceState?.getSerializable(ANSWERS_KEY) ?: quizViewModel.answers
         quizViewModel.answers = currentAnswers as HashMap<Question, Boolean>
 
         trueButton = findViewById(R.id.true_button)
@@ -80,7 +81,7 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (resultCode != Activity.RESULT_OK ) {
+        if (resultCode != Activity.RESULT_OK) {
             return
         }
 
