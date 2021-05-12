@@ -6,4 +6,10 @@
     <string name="year_of_graduation">Year of Graduation</string>
     <string name="degree">Degree</string>
     <string name="create_your_bio">Create Your Bio!!</string>
+    <string name="b_s">B.S</string>
+    <string name="m_s">M.S</string>
+    <string name="ph_d">Ph.D</string>
+    <string name="bas">BAS</string>
+    <string name="major">Major</string>
+    <string name="favourite_activities">Favourite Activities</string>
 </resources>
