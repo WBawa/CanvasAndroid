@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (requestCode == REQUEST_CODE_CHEAT) {
-            quizViewModel.isCheater = data?.getBooleanExtra(EXTRA_ANSWER_SHOWN, false) ?: false
+            quizViewModel.answers[quizViewModel.currentQuestion] = data?.getBooleanExtra(EXTRA_ANSWER_SHOWN, false) ?: false
         }
     }
 
@@ -145,9 +145,9 @@ class MainActivity : AppCompatActivity() {
     private fun checkAnswer(userAnswer: Boolean) {
 
         val correctAnswer = quizViewModel.currentQuestionAnswer
-        Log.d(TAG, quizViewModel.isCheater.toString())
+        Log.d(TAG, quizViewModel.answers[quizViewModel.currentQuestion].toString())
         val messageResId = when {
-            quizViewModel.isCheater -> R.string.judgment_toast
+            quizViewModel.answers[quizViewModel.currentQuestion] == true -> R.string.judgment_toast
             userAnswer == correctAnswer -> R.string.correct_toast
             else -> R.string.incorrect_toast
         }
@@ -155,8 +155,6 @@ class MainActivity : AppCompatActivity() {
         if (userAnswer == quizViewModel.currentQuestionAnswer) {
             quizViewModel.addRightAnswer()
         }
-
-        quizViewModel.currentAnswers[quizViewModel.currentQuestion] = userAnswer
 
         disableButtons()
 
@@ -195,6 +193,6 @@ class MainActivity : AppCompatActivity() {
             return
         }
         enableButtons()
-        Log.d(TAG, "got here")
+        Log.d(TAG, "Check if answered")
     }
 }
