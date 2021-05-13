@@ -6,11 +6,12 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 private const val TAG = "MainActivity"
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var radioGroup: RadioGroup
     private lateinit var radioButton: RadioButton
     private lateinit var createButton: Button
     private lateinit var spinner: Spinner
+    lateinit var selectedMajor: String
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter.createFromResource(this, R.array.majors, android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
+        spinner.onItemSelectedListener = this
+
 
         createButton.setOnClickListener {
 
@@ -34,5 +37,14 @@ class MainActivity : AppCompatActivity() {
     fun checkMajor(v: View) {
         Log.d(TAG, "hi")
 
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        selectedMajor = parent?.getItemAtPosition(position).toString()
+        Log.d(TAG, selectedMajor)
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+        TODO("Not yet implemented")
     }
 }
