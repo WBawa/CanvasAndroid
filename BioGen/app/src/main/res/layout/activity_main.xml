@@ -103,37 +103,120 @@
             android:orientation="horizontal"
             android:layout_marginTop="10dp">
 
-       <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="@string/degree"
-               android:layout_marginTop="13dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/degree"
+                android:layout_marginTop="13dp"/>
 
         <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="vertical"
+                android:id="@+id/radiogroup">
+
+            <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                <RadioButton
+                        android:id="@+id/bs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/b_s"
+                        android:layout_marginStart="20dp"
+                        android:onClick="checkMajor"/>
+                <RadioButton
+                        android:id="@+id/ms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m_s"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/phd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ph_d"
+                        android:layout_marginStart="20dp"/>
+            </RadioGroup>
 
 
-            <RadioButton
+            <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/b_s"
-                    android:layout_marginStart="20dp"/>
-            <RadioButton
+                    android:orientation="horizontal" >
+                <RadioButton
+                        android:id="@+id/bas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bas"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/ma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m_a"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/md"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m_d"
+                        android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
+            <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/m_s"
-                    android:layout_marginStart="20dp"/>
-            <RadioButton
+                    android:orientation="horizontal" >
+                <RadioButton
+                        android:id="@+id/ba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ba"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/mfa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mfa"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/dds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dds"
+                        android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
+            <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ph_d"
-                    android:layout_marginStart="20dp"/>
+                    android:orientation="horizontal" >
+                <RadioButton
+                        android:id="@+id/bfa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bfa"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/mba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mba"
+                        android:layout_marginStart="20dp"/>
+                <RadioButton
+                        android:id="@+id/jd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/j_d"
+                        android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
         </RadioGroup>
 
     </LinearLayout>
-<!--SPINNER STUFF-->
+    <!--SPINNER STUFF-->
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,9 +257,13 @@
                 android:hint="@string/favourite_activities"
                 android:ems="13"/>
 
-
-
-
     </LinearLayout>
+
+    <Button
+            android:id="@+id/create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/create" />
 
 </LinearLayout>
