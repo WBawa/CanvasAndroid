@@ -21,4 +21,13 @@
     <string name="mba">MBA</string>
     <string name="j_d">J.D</string>
     <string name="create">CREATE</string>
+
+    <string-array name="majors">
+        <item>Choose a Major</item>
+        <item>Computer Science</item>
+        <item>Engineering</item>
+        <item>Math</item>
+        <item>Biology</item>
+        <item>Education</item>
+    </string-array>
 </resources>

@@ -116,6 +116,7 @@
                 android:id="@+id/radiogroup">
 
             <RadioGroup
+                    android:id="@+id/radiogroup1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
@@ -231,10 +232,10 @@
 
 
         <Spinner
+                android:id="@+id/spinner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:hint="@string/year_of_graduation"
                 android:ems="13"/>
 
     </LinearLayout>
