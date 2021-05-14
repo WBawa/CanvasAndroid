@@ -76,10 +76,15 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
         selectedMajor = parent?.getItemAtPosition(position).toString()
-        Log.d(TAG, selectedMajor)
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
         TODO("Not yet implemented")
+    }
+
+    fun unCheck(v: View) {
+        for (i in radioGroups) {
+            i.clearCheck()
+        }
     }
 }

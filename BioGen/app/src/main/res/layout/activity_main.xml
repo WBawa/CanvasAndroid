@@ -217,6 +217,14 @@
 
         </RadioGroup>
 
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="65dp"
+                android:text="@string/clear_selection"
+                android:onClick="unCheck" />
+
     </LinearLayout>
     <!--SPINNER STUFF-->
     <LinearLayout
