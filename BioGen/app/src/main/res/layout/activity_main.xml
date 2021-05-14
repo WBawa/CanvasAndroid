@@ -124,8 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/b_s"
-                        android:layout_marginStart="20dp"
-                        android:onClick="checkMajor"/>
+                        android:layout_marginStart="20dp" />
                 <RadioButton
                         android:id="@+id/ms"
                         android:layout_width="wrap_content"
@@ -142,6 +141,7 @@
 
 
             <RadioGroup
+                    android:id="@+id/radiogroup2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
@@ -166,6 +166,7 @@
             </RadioGroup>
 
             <RadioGroup
+                    android:id="@+id/radiogroup3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
@@ -190,6 +191,7 @@
             </RadioGroup>
 
             <RadioGroup
+                    android:id="@+id/radiogroup4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal" >
