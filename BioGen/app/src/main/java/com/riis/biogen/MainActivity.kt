@@ -2,11 +2,12 @@ package com.riis.biogen
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+
 private const val TAG = "MainActivity"
+
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private var radioGroups: ArrayList<RadioGroup> = ArrayList()
     private lateinit var radioButton: RadioButton
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var lastName: String
     private lateinit var school: String
     private lateinit var yearOfGraduation: String
-     private lateinit var selectedDegree: String
+    private lateinit var selectedDegree: String
     lateinit var selectedMajor: String
     private lateinit var favouriteActivities: String
 
@@ -35,7 +36,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         createButton = findViewById(R.id.create_button)
         spinner = findViewById(R.id.spinner)
 
-        val adapter = ArrayAdapter.createFromResource(this, R.array.majors, android.R.layout.simple_spinner_item)
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.majors,
+            android.R.layout.simple_spinner_item
+        )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         spinner.onItemSelectedListener = this
@@ -47,7 +52,8 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             firstName = (findViewById<View>(R.id.first_name) as TextView).text.toString()
             lastName = (findViewById<View>(R.id.last_name) as TextView).text.toString()
             school = (findViewById<View>(R.id.school) as TextView).text.toString()
-            yearOfGraduation = (findViewById<View>(R.id.year_of_graduation) as TextView).text.toString()
+            yearOfGraduation =
+                (findViewById<View>(R.id.year_of_graduation) as TextView).text.toString()
 
             for (i in radioGroups) {
                 if (i.checkedRadioButtonId != -1) {
@@ -57,11 +63,12 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             }
 
             selectedDegree = radioButton.text as String
-            favouriteActivities = (findViewById<View>(R.id.favourite_activities) as TextView).text.toString()
+            favouriteActivities =
+                (findViewById<View>(R.id.favourite_activities) as TextView).text.toString()
 
 
             val intent = Intent(this, DisplayActivity::class.java).apply {
-               putExtra("first_name", firstName)
+                putExtra("first_name", firstName)
                 putExtra("last_name", lastName)
                 putExtra("school", school)
                 putExtra("year_of_graduation", yearOfGraduation)
