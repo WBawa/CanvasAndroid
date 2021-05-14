@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     fun checkMajor(v: View) {
         Log.d(TAG, "hi")
-
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {

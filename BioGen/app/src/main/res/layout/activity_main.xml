@@ -27,6 +27,7 @@
                 android:text="@string/first_name" />
 
         <EditText
+                android:id="@+id/first_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="72dp"
@@ -46,6 +47,7 @@
                 android:text="@string/last_name" />
 
         <EditText
+                android:id="@+id/last_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="73dp"
@@ -65,6 +67,7 @@
                 android:text="@string/school" />
 
         <EditText
+                android:id="@+id/school"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="98dp"
@@ -84,17 +87,13 @@
                 android:text="@string/year_of_graduation" />
 
         <EditText
+                android:id="@+id/year_of_graduation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:hint="@string/year_of_graduation"
                 android:ems="13"/>
 
-        <CheckBox
-                android:text="CheckBox"
-                android:layout_width="127dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/checkBox" />
     </LinearLayout>
 
     <LinearLayout
@@ -252,6 +251,7 @@
                 android:text="@string/favourite_activities" />
 
         <EditText
+                android:id="@+id/favourite_activities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
