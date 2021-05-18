@@ -1,0 +1,247 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+MERGED from [androidx.databinding:databinding-adapters:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/fc4952ce75056ea2b0e77f01acac495e/databinding-adapters-4.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-runtime:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5fc7aa48b2c704b396d80ea3ac4f5cfd/databinding-runtime-4.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/160320c673a0c4586f558a42c241c710/navigation-ui-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5c79be5794a2bc1265446180e8fdb2ff/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/276d886e88dcf77ce2a1dae92b13542d/material-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/wahid/.gradle/caches/transforms-2/files-2.1/bbb27b0481015a257bc147ae9b1cb73e/constraintlayout-2.0.0-beta3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/59f7299571cb6a2b4d5250eca5d1335d/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta04] /home/wahid/.gradle/caches/transforms-2/files-2.1/532d2292abd4d868a2c3ffc060c75cac/jetified-viewpager2-1.0.0-beta04/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /home/wahid/.gradle/caches/transforms-2/files-2.1/8585bd0a40d7510eec863791da0778bf/recyclerview-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/88b8ba6857384b1e09936c844b5eb6e6/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/331ba2e868e0dc218a055dffb7e795b2/jetified-viewbinding-4.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/0968483d7a53f8bb1847240430d663f5/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.0.1] /home/wahid/.gradle/caches/transforms-2/files-2.1/9eb525644c8254c4763343abf5a2694c/transition-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/9e6d04fe696a7e86188beebc5bb2a7e1/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/07aeb54c40e167639c9a74e440e82160/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d212548bf8888df4052475e5fb6c84da/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7cea4285913aa21e4958c1f30f2148d0/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b0839cd9385d7ab4088f56b448d4e2a3/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6df3e257b259f4d822e9e5b84b90e7a/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6885af8720f379c6ac63fcf4545de14/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/e31022e08808c56b778bf0f2b6f4705d/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b333593a28b2aefdef8ffa1ce60f4936/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d11c8182a5e297da2b37206a4210fd67/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/1637bcc1567f73c0d0dfe78f57eb4d0a/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0845139018f81327c10bce840b704597/navigation-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/248016ed73fd1c371786092986149c00/jetified-activity-ktx-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7d97544fa10b6fb891c67e1bb91f4295/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0a9d11fe0de348025fc614e1988b14b7/navigation-common-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/42a5a77ba10f293667ae3f766f8cb945/navigation-common-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/8b50141a47b119b42686ba813e0eef1d/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de00dd7e681af55116836b3d6db3f9c2/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dd9e29db1f690c5fd32ab5ef53e960ea/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b3f87fc1804b8b085148305b3bb71ff0/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/6639c9cb8a3b02d3819c27c25649e3c2/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de5263ae966d626679235157aadb664c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/af9d2e871b9c6a5122c62b98828809be/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7f0eb1da53a54936319af98db1f2ba46/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b8ddd9dd6d6c66b1595e43f2603eb74b/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dfc88882f1d952f5d016afec1f40c717/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d205964b1c79bb19ae6c30fcfda1247c/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+	package
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:19:11-60
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:18:11-57
+	android:versionCode
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:1-54:12
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:17:11-69
+application
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:21:5-52:19
+MERGED from [com.google.android.material:material:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/276d886e88dcf77ce2a1dae92b13542d/material-1.1.0-beta01/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/276d886e88dcf77ce2a1dae92b13542d/material-1.1.0-beta01/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/wahid/.gradle/caches/transforms-2/files-2.1/bbb27b0481015a257bc147ae9b1cb73e/constraintlayout-2.0.0-beta3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/wahid/.gradle/caches/transforms-2/files-2.1/bbb27b0481015a257bc147ae9b1cb73e/constraintlayout-2.0.0-beta3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de00dd7e681af55116836b3d6db3f9c2/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de00dd7e681af55116836b3d6db3f9c2/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:24:9-41
+	tools:ignore
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:27:9-48
+	android:icon
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:23:9-43
+	android:allowBackup
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:22:9-36
+	android:theme
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:26:9-40
+activity#com.example.android.codelabs.navigation.MainActivity
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:28:9-40:20
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:28:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:29:13-34:29
+action#android.intent.action.MAIN
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:32:17-76
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:32:27-73
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+category#android.intent.category.LAUNCHER
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:33:27-74
+nav-graph
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:37:13-72
+CONVERTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:37:13-72
+	android:value
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:37:24-69
+receiver#com.example.android.codelabs.navigation.DeepLinkAppWidgetProvider
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:42:9-50:20
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:42:19-60
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:43:13-45:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:44:17-84
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:44:25-81
+meta-data#android.appwidget.provider
+ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:47:13-49:68
+	android:resource
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:49:17-65
+	android:name
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml:48:17-58
+uses-sdk
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/fc4952ce75056ea2b0e77f01acac495e/databinding-adapters-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/fc4952ce75056ea2b0e77f01acac495e/databinding-adapters-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5fc7aa48b2c704b396d80ea3ac4f5cfd/databinding-runtime-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5fc7aa48b2c704b396d80ea3ac4f5cfd/databinding-runtime-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/160320c673a0c4586f558a42c241c710/navigation-ui-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/160320c673a0c4586f558a42c241c710/navigation-ui-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5c79be5794a2bc1265446180e8fdb2ff/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/5c79be5794a2bc1265446180e8fdb2ff/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/276d886e88dcf77ce2a1dae92b13542d/material-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/276d886e88dcf77ce2a1dae92b13542d/material-1.1.0-beta01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/wahid/.gradle/caches/transforms-2/files-2.1/bbb27b0481015a257bc147ae9b1cb73e/constraintlayout-2.0.0-beta3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta3] /home/wahid/.gradle/caches/transforms-2/files-2.1/bbb27b0481015a257bc147ae9b1cb73e/constraintlayout-2.0.0-beta3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/59f7299571cb6a2b4d5250eca5d1335d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/59f7299571cb6a2b4d5250eca5d1335d/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta04] /home/wahid/.gradle/caches/transforms-2/files-2.1/532d2292abd4d868a2c3ffc060c75cac/jetified-viewpager2-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-beta04] /home/wahid/.gradle/caches/transforms-2/files-2.1/532d2292abd4d868a2c3ffc060c75cac/jetified-viewpager2-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /home/wahid/.gradle/caches/transforms-2/files-2.1/8585bd0a40d7510eec863791da0778bf/recyclerview-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0-rc01] /home/wahid/.gradle/caches/transforms-2/files-2.1/8585bd0a40d7510eec863791da0778bf/recyclerview-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/88b8ba6857384b1e09936c844b5eb6e6/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/88b8ba6857384b1e09936c844b5eb6e6/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/331ba2e868e0dc218a055dffb7e795b2/jetified-viewbinding-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.2.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/331ba2e868e0dc218a055dffb7e795b2/jetified-viewbinding-4.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/0968483d7a53f8bb1847240430d663f5/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-beta01] /home/wahid/.gradle/caches/transforms-2/files-2.1/0968483d7a53f8bb1847240430d663f5/coordinatorlayout-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.0.1] /home/wahid/.gradle/caches/transforms-2/files-2.1/9eb525644c8254c4763343abf5a2694c/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] /home/wahid/.gradle/caches/transforms-2/files-2.1/9eb525644c8254c4763343abf5a2694c/transition-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/9e6d04fe696a7e86188beebc5bb2a7e1/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/9e6d04fe696a7e86188beebc5bb2a7e1/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/07aeb54c40e167639c9a74e440e82160/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/07aeb54c40e167639c9a74e440e82160/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d212548bf8888df4052475e5fb6c84da/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d212548bf8888df4052475e5fb6c84da/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7cea4285913aa21e4958c1f30f2148d0/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7cea4285913aa21e4958c1f30f2148d0/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b0839cd9385d7ab4088f56b448d4e2a3/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b0839cd9385d7ab4088f56b448d4e2a3/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6df3e257b259f4d822e9e5b84b90e7a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6df3e257b259f4d822e9e5b84b90e7a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6885af8720f379c6ac63fcf4545de14/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b6885af8720f379c6ac63fcf4545de14/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/e31022e08808c56b778bf0f2b6f4705d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/e31022e08808c56b778bf0f2b6f4705d/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b333593a28b2aefdef8ffa1ce60f4936/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b333593a28b2aefdef8ffa1ce60f4936/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d11c8182a5e297da2b37206a4210fd67/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d11c8182a5e297da2b37206a4210fd67/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/1637bcc1567f73c0d0dfe78f57eb4d0a/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/1637bcc1567f73c0d0dfe78f57eb4d0a/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0845139018f81327c10bce840b704597/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0845139018f81327c10bce840b704597/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/248016ed73fd1c371786092986149c00/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/248016ed73fd1c371786092986149c00/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7d97544fa10b6fb891c67e1bb91f4295/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7d97544fa10b6fb891c67e1bb91f4295/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0a9d11fe0de348025fc614e1988b14b7/navigation-common-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/0a9d11fe0de348025fc614e1988b14b7/navigation-common-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/42a5a77ba10f293667ae3f766f8cb945/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/42a5a77ba10f293667ae3f766f8cb945/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/cc5e685bfe0db38f70431dc5e3363597/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/8b50141a47b119b42686ba813e0eef1d/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/8b50141a47b119b42686ba813e0eef1d/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de00dd7e681af55116836b3d6db3f9c2/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de00dd7e681af55116836b3d6db3f9c2/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dd9e29db1f690c5fd32ab5ef53e960ea/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dd9e29db1f690c5fd32ab5ef53e960ea/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b3f87fc1804b8b085148305b3bb71ff0/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b3f87fc1804b8b085148305b3bb71ff0/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/6639c9cb8a3b02d3819c27c25649e3c2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/6639c9cb8a3b02d3819c27c25649e3c2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de5263ae966d626679235157aadb664c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/de5263ae966d626679235157aadb664c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/af9d2e871b9c6a5122c62b98828809be/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/af9d2e871b9c6a5122c62b98828809be/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7f0eb1da53a54936319af98db1f2ba46/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/7f0eb1da53a54936319af98db1f2ba46/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b8ddd9dd6d6c66b1595e43f2603eb74b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/b8ddd9dd6d6c66b1595e43f2603eb74b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dfc88882f1d952f5d016afec1f40c717/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/dfc88882f1d952f5d016afec1f40c717/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d205964b1c79bb19ae6c30fcfda1247c/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/wahid/.gradle/caches/transforms-2/files-2.1/d205964b1c79bb19ae6c30fcfda1247c/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		ADDED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+		INJECTED from /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/AndroidManifest.xml
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:github.com+data:pathPrefix:/+data:scheme:https
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+action#android.intent.action.VIEW
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:name
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+category#android.intent.category.BROWSABLE
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:name
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+data
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:host
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:scheme
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58
+	android:pathPrefix
+		ADDED from [mobile_navigation] /home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml:87:9-58

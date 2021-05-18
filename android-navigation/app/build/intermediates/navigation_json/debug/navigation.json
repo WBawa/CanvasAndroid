@@ -1,0 +1,33 @@
+[
+  {
+    "name": "mobile_navigation",
+    "navigationXmlIds": [],
+    "deepLinks": [
+      {
+        "schemes": [
+          "https"
+        ],
+        "host": "github.com",
+        "port": -1,
+        "path": "/.*",
+        "sourceFilePosition": {
+          "mSourceFile": {
+            "mSourceFile": {
+              "path": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml"
+            },
+            "mDescription": "mobile_navigation"
+          },
+          "mSourcePosition": {
+            "mStartLine": 86,
+            "mStartColumn": 8,
+            "mStartOffset": 3260,
+            "mEndLine": 86,
+            "mEndColumn": 57,
+            "mEndOffset": 3309
+          }
+        },
+        "isAutoVerify": false
+      }
+    ]
+  }
+]

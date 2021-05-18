@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_nav_view_header.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/nav_view_header.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/drawable_ic_shopping_cart_white.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/drawable/ic_shopping_cart_white.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_shopping_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/shopping_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_home_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/home_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout-w960dp_navigation_activity.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout-w960dp/navigation_activity.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_fade_out.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/fade_out.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_navigation_activity.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/navigation_activity.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/menu_nav_drawer_menu.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/menu/nav_drawer_menu.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/drawable_ic_help.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/drawable/ic_help.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout-h470dp_navigation_activity.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout-h470dp/navigation_activity.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/menu_overflow_menu.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/menu/overflow_menu.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_deeplink_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/deeplink_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/xml_deep_link_appwidget_info.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/xml/deep_link_appwidget_info.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_flow_step_two_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/flow_step_two_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_settings_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/settings_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/menu_main_menu.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/drawable_ic_settings.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/drawable_ic_android.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/drawable/ic_android.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/drawable_ic_home.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_flow_step_one_fragment.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/flow_step_one_fragment.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/layout_deep_link_appwidget.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/layout/deep_link_appwidget.xml"
+    },
+    {
+        "merged": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/build/intermediates/res/merged/debug/anim_fade_in.xml.flat",
+        "source": "/home/wahid/Documents/GitHub/RIIS/CanvasAndroid/android-navigation/app/src/main/res/anim/fade_in.xml"
+    }
+]
