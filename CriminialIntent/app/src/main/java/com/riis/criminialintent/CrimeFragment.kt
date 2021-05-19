@@ -3,6 +3,7 @@ package com.riis.criminialintent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -51,7 +52,8 @@ class CrimeFragment : Fragment() {
          }
 
          override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-             crime.title = s.toString()
+            crime.title = s.toString()
+            Log.d("TEST: ", "this is not pog")
          }
 
          override fun afterTextChanged(s: Editable?) {
