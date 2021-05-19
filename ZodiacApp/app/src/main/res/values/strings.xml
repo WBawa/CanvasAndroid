@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ZodiacApp</string>
+    <string name="sample_zodiac">Sample Zodiac</string>
 </resources>

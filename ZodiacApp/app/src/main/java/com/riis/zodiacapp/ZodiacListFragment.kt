@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -35,6 +36,15 @@ class ZodiacListFragment : Fragment() {
         zodiacRecyclerView.layoutManager = LinearLayoutManager(context)
 
         return view
+    }
+
+    private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val zodiacTextView: TextView = itemView.findViewById(R.id.zodiac_item)
+
+        fun bind(zodiac: String) {
+            zodiacTextView.text = zodiac
+        }
+
     }
 
 //    companion object {
