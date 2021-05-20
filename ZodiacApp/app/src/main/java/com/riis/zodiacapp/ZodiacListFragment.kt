@@ -15,6 +15,7 @@ private const val TAG = "ZodiacListFragment"
 
 class ZodiacListFragment : Fragment() {
     private lateinit var zodiacRecyclerView: RecyclerView
+    private var adapter: ZodiacAdapter? = null
 
     private val zodiacListViewModel: ZodiacListViewModel by lazy {
         ViewModelProviders.of(this).get(ZodiacListViewModel::class.java)
@@ -22,7 +23,6 @@ class ZodiacListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "POGGIES")
     }
 
     override fun onCreateView(
@@ -35,6 +35,8 @@ class ZodiacListFragment : Fragment() {
         zodiacRecyclerView = view.findViewById(R.id.zodiac_recycler_view) as RecyclerView
         zodiacRecyclerView.layoutManager = LinearLayoutManager(context)
 
+        updateUI()
+
         return view
     }
 
@@ -44,8 +46,31 @@ class ZodiacListFragment : Fragment() {
         fun bind(zodiac: String) {
             zodiacTextView.text = zodiac
         }
+    }
+
+    private fun updateUI() {
+        val signs = zodiacListViewModel.zodiac
+        adapter = ZodiacAdapter(signs)
+        zodiacRecyclerView.adapter = adapter
+    }
+
+    private inner class ZodiacAdapter(var zodiac: List<String>) : RecyclerView.Adapter<ZodiacHolder>() {
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ZodiacHolder {
+            val view = layoutInflater.inflate(R.layout.list_item_zodiac, parent, false)
+            return ZodiacHolder(view)
+        }
+
+        override fun onBindViewHolder(holder: ZodiacHolder, position: Int) {
+            val zodiacSign = zodiac[position]
+            holder.bind(zodiacSign)
+        }
+
+        override fun getItemCount(): Int {
+            return zodiac.size
+        }
 
     }
+
 
 //    companion object {
 //        fun newInstance(): ZodiacListFragment {
