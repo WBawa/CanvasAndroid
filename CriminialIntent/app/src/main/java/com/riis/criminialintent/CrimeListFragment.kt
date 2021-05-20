@@ -57,7 +57,6 @@ class CrimeListFragment : Fragment() {
             itemView.setOnClickListener(this)
         }
 
-
         fun bind(crime: Crime) {
             this.crime = crime
             titleTextView.text = this.crime.title
@@ -73,8 +72,13 @@ class CrimeListFragment : Fragment() {
         private var requiresPolice = false
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CrimeHolder {
-            Log.d(TAG, requiresPolice.toString())
-            val view = layoutInflater.inflate(R.layout.list_item_crime, parent, false)
+
+            val view = if (!requiresPolice) {
+                layoutInflater.inflate(R.layout.list_item_crime, parent, false)
+            } else {
+                layoutInflater.inflate(R.layout.list_item_crime_police, parent, false)
+            }
+
             return CrimeHolder(view)
         }
 
