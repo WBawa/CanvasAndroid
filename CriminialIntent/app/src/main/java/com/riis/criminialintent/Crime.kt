@@ -1,7 +1,6 @@
 package com.riis.criminialintent
 
-import java.util.Date
-import java.util.UUID
+import java.util.*
 
 data class Crime(
     val id: UUID = UUID.randomUUID(),

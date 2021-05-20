@@ -12,8 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.lang.Exception
-import java.lang.NullPointerException
 
 private const val TAG = "CrimeListFragment"
 
@@ -50,7 +48,8 @@ class CrimeListFragment : Fragment() {
         crimeRecyclerView.adapter = adapter
     }
 
-    private inner class CrimeHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener{
+    private inner class CrimeHolder(view: View) : RecyclerView.ViewHolder(view),
+        View.OnClickListener {
         private lateinit var crime: Crime
 
         private val titleTextView: TextView = itemView.findViewById(R.id.crime_title)
@@ -63,12 +62,15 @@ class CrimeListFragment : Fragment() {
             try {
                 contactPoliceButton = itemView.findViewById(R.id.contact_police)
                 contactPoliceButton.setOnClickListener {
-                    Toast.makeText(context, "Contacting the police for ${crime.title}!!!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        context,
+                        "Contacting the police for ${crime.title}!!!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
             } catch (e: NullPointerException) {
-//                Log.d(TAG, contactPoliceButton.toString())
-
+                Log.d(TAG, "No police required")
             }
         }
 
@@ -83,8 +85,8 @@ class CrimeListFragment : Fragment() {
         }
     }
 
-
-    private inner class CrimeAdapter(var crimes: List<Crime>) :RecyclerView.Adapter<CrimeHolder>() {
+    private inner class CrimeAdapter(var crimes: List<Crime>) :
+        RecyclerView.Adapter<CrimeHolder>() {
         private var requiresPolice = false
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CrimeHolder {
