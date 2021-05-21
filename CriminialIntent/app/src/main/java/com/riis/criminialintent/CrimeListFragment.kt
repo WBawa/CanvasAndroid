@@ -10,8 +10,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
 
 private const val TAG = "CrimeListFragment"
 
@@ -36,6 +38,12 @@ class CrimeListFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_crime_list, container, false)
         crimeRecyclerView = view.findViewById(R.id.crime_recycler_view) as RecyclerView
         crimeRecyclerView.layoutManager = LinearLayoutManager(context)
+
+        val dividerItemDecoration = DividerItemDecoration(
+            crimeRecyclerView.context,
+            (crimeRecyclerView.layoutManager as LinearLayoutManager).orientation
+        )
+        crimeRecyclerView.addItemDecoration(dividerItemDecoration)
 
         updateUI()
 
