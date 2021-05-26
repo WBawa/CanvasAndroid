@@ -80,23 +80,6 @@ class CrimeListFragment : Fragment() {
         private lateinit var contactPoliceButton: Button
 
 
-        init {
-//            itemView.setOnClickListener(this)
-//            try {
-//                contactPoliceButton = itemView.findViewById(R.id.contact_police)
-//                contactPoliceButton.setOnClickListener {
-//                    Toast.makeText(
-//                        context,
-//                        "Contacting the police for ${crime.title}!!!",
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                }
-//
-//            } catch (e: NullPointerException) {
-//                Log.d(TAG, "No police required")
-//            }
-        }
-
         fun bind(crime: Crime) {
             this.crime = crime
             titleTextView.text = this.crime.title
@@ -115,11 +98,6 @@ class CrimeListFragment : Fragment() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CrimeHolder {
 
             val view = layoutInflater.inflate(R.layout.list_item_crime, parent, false)
-//            val view = if (!requiresPolice) {
-//                layoutInflater.inflate(R.layout.list_item_crime, parent, false)
-//            } else {
-//                layoutInflater.inflate(R.layout.list_item_crime_police, parent, false)
-//            }
 
             return CrimeHolder(view)
         }
@@ -132,14 +110,6 @@ class CrimeListFragment : Fragment() {
         override fun getItemCount(): Int {
             return crimes.size
         }
-
-//        override fun getItemViewType(position: Int): Int {
-//            requiresPolice = crimes[position].requiresPolice
-//            if (requiresPolice) {
-//                return 1
-//            }
-//            return 0
-//        }
     }
 
     companion object {
