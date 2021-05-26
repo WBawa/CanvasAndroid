@@ -6,7 +6,7 @@ import androidx.room.Room
 import java.lang.IllegalStateException
 import java.util.*
 
-private const val DATABASE_NAME = "zodiac_db"
+private const val DATABASE_NAME = "horoscope-database"
 
 class SignRepository private constructor(context: Context){
     private val database : SignDatabase = Room.databaseBuilder(
@@ -25,7 +25,6 @@ class SignRepository private constructor(context: Context){
         private var INSTANCE: SignRepository? = null
 
         fun initialize(context: Context) {
-            println("got here BITCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
             if (INSTANCE == null) {
                 INSTANCE = SignRepository(context)
             }
