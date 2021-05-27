@@ -14,12 +14,7 @@ class SignRepository private constructor(context: Context){
         context.applicationContext,
         SignDatabase::class.java,
         DATABASE_NAME
-    ).build()
-//    private val database : SignDatabase = Room.databaseBuilder(
-//        context.applicationContext,
-//        SignDatabase::class.java,
-//        DATABASE_NAME
-//    ).createFromAsset(DATABASE_DIR).build()
+    ).createFromAsset(DATABASE_DIR).build()
 
     private val signDao = database.signDao()
 
