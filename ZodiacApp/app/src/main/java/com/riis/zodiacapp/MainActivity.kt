@@ -1,7 +1,7 @@
 package com.riis.zodiacapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +12,8 @@ class MainActivity : AppCompatActivity() {
 
         if (currentFragment == null) {
             val fragment = ZodiacListFragment.newInstance()
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, fragment).commit()
+            supportFragmentManager.beginTransaction().add(R.id.fragment_container, fragment)
+                .commit()
         }
     }
 }

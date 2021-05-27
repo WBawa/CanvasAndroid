@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -31,25 +32,35 @@ class ZodiacListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        return super.onCreateView(inflater, container, savedInstanceState)
         val view = inflater.inflate(R.layout.fragment_zodiac_list, container, false)
         zodiacRecyclerView = view.findViewById(R.id.zodiac_recycler_view) as RecyclerView
         zodiacRecyclerView.layoutManager = LinearLayoutManager(context)
 
-//        updateUI()
+        val dividerItemDecoration = DividerItemDecoration(
+            zodiacRecyclerView.context,
+            (zodiacRecyclerView.layoutManager as LinearLayoutManager).orientation
+        )
+        zodiacRecyclerView.addItemDecoration(dividerItemDecoration)
 
         return view
     }
 
-    private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
+    private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view),
+        View.OnClickListener {
 
         private val zodiacTextView: TextView = itemView.findViewById(R.id.zodiac_item)
+        private val zodiacDescription: TextView = itemView.findViewById(R.id.description)
+        private val zodiacSymbol: TextView = itemView.findViewById(R.id.zodiac_symbol)
+        private val zodiacMonth: TextView = itemView.findViewById(R.id.zodiac_month)
 
         private lateinit var sign: Sign
 
         fun bind(zodiac: Sign) {
             sign = zodiac
-            zodiacTextView.text = sign.name
+            zodiacTextView.text = "Sign: ${sign.name}"
+            zodiacDescription.text = "Description: ${sign.description}"
+            zodiacSymbol.text = "Symbol: ${sign.symbol}"
+            zodiacMonth.text = "Month: ${sign.month}"
         }
 
         override fun onClick(v: View) {
@@ -74,7 +85,8 @@ class ZodiacListFragment : Fragment() {
         zodiacRecyclerView.adapter = adapter
     }
 
-    private inner class ZodiacAdapter(var zodiac: List<Sign>) : RecyclerView.Adapter<ZodiacHolder>() {
+    private inner class ZodiacAdapter(var zodiac: List<Sign>) :
+        RecyclerView.Adapter<ZodiacHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ZodiacHolder {
             val view = layoutInflater.inflate(R.layout.list_item_zodiac, parent, false)
             return ZodiacHolder(view)
