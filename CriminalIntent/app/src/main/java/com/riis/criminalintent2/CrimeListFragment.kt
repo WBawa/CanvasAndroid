@@ -88,9 +88,7 @@ class CrimeListFragment : Fragment() {
             titleTextView.text = this.crime.title
             dateTextView.text = this.crime.date.toString()
 
-            if (!crime.isSolved) {
-                imageView.isVisible = false
-            }
+            imageView.isVisible = crime.isSolved
         }
 
         override fun onClick(v: View) {
