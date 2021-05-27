@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -77,13 +79,18 @@ class CrimeListFragment : Fragment() {
 
         private val titleTextView: TextView = itemView.findViewById(R.id.crime_title)
         private val dateTextView: TextView = itemView.findViewById(R.id.crime_date)
-        private lateinit var contactPoliceButton: Button
+        private val imageView: ImageView = itemView.findViewById(R.id.crime_solved)
+//        private lateinit var contactPoliceButton: Button
 
 
         fun bind(crime: Crime) {
             this.crime = crime
             titleTextView.text = this.crime.title
             dateTextView.text = this.crime.date.toString()
+
+            if (!crime.isSolved) {
+                imageView.isVisible = false
+            }
         }
 
         override fun onClick(v: View) {
