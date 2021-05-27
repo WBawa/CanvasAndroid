@@ -45,8 +45,7 @@ class ZodiacListFragment : Fragment() {
         return view
     }
 
-    private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view),
-        View.OnClickListener {
+    private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         private val zodiacTextView: TextView = itemView.findViewById(R.id.zodiac_item)
         private val zodiacDescription: TextView = itemView.findViewById(R.id.description)
@@ -55,16 +54,18 @@ class ZodiacListFragment : Fragment() {
 
         private lateinit var sign: Sign
 
+        init {
+            view.setOnClickListener{
+                Toast.makeText(context, "${sign.name} pressed!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         fun bind(zodiac: Sign) {
             sign = zodiac
             zodiacTextView.text = "Sign: ${sign.name}"
             zodiacDescription.text = "Description: ${sign.description}"
             zodiacSymbol.text = "Symbol: ${sign.symbol}"
             zodiacMonth.text = "Month: ${sign.month}"
-        }
-
-        override fun onClick(v: View) {
-            Toast.makeText(context, "${sign.name} pressed!", Toast.LENGTH_SHORT).show()
         }
     }
 
