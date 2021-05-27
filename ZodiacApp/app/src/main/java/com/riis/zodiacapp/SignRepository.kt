@@ -6,7 +6,8 @@ import androidx.room.Room
 import java.lang.IllegalStateException
 import java.util.*
 
-private const val DATABASE_NAME = "horoscope-database"
+private const val DATABASE_NAME = "zodiac_db"
+private const val DATABASE_DIR = "databases/zodiac_db"
 
 class SignRepository private constructor(context: Context){
     private val database : SignDatabase = Room.databaseBuilder(
@@ -14,6 +15,11 @@ class SignRepository private constructor(context: Context){
         SignDatabase::class.java,
         DATABASE_NAME
     ).build()
+//    private val database : SignDatabase = Room.databaseBuilder(
+//        context.applicationContext,
+//        SignDatabase::class.java,
+//        DATABASE_NAME
+//    ).createFromAsset(DATABASE_DIR).build()
 
     private val signDao = database.signDao()
 
