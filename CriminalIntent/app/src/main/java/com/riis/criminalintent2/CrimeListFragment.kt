@@ -72,8 +72,7 @@ class CrimeListFragment : Fragment() {
         crimeRecyclerView.adapter = adapter
     }
 
-    private inner class CrimeHolder(view: View) : RecyclerView.ViewHolder(view),
-        View.OnClickListener {
+    private inner class CrimeHolder(view: View) : RecyclerView.ViewHolder(view) {
         private lateinit var crime: Crime
 
         private val titleTextView: TextView = itemView.findViewById(R.id.crime_title)
@@ -81,16 +80,17 @@ class CrimeListFragment : Fragment() {
         private val imageView: ImageView = itemView.findViewById(R.id.crime_solved)
 //        private lateinit var contactPoliceButton: Button
 
+        init {
+            view.setOnClickListener{
+                Toast.makeText(context, "${crime.title} pressed!", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         fun bind(crime: Crime) {
             this.crime = crime
             titleTextView.text = this.crime.title
             dateTextView.text = this.crime.date.toString()
             imageView.isVisible = crime.isSolved
-        }
-
-        override fun onClick(v: View) {
-            Toast.makeText(context, "${crime.title} pressed!", Toast.LENGTH_SHORT).show()
         }
     }
 
