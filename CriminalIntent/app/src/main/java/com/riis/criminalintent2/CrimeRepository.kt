@@ -6,13 +6,14 @@ import androidx.room.Room
 import java.util.*
 
 private const val DATABASE_NAME = "crime-database"
+private const val DATABASE_PATH = "databases/crime-database"
 
 class CrimeRepository private constructor(context: Context){
     private val database : CrimeDatabase = Room.databaseBuilder(
         context.applicationContext,
         CrimeDatabase::class.java,
         DATABASE_NAME
-    ).build()
+    ).createFromAsset(DATABASE_PATH).build()
 
     private val crimeDao = database.crimeDao()
 
