@@ -50,7 +50,6 @@ class CrimeListFragment : Fragment() {
 
         crimeRecyclerView.adapter = adapter
 
-//        updateUI()
 
         return view
     }
@@ -87,7 +86,6 @@ class CrimeListFragment : Fragment() {
             this.crime = crime
             titleTextView.text = this.crime.title
             dateTextView.text = this.crime.date.toString()
-
             imageView.isVisible = crime.isSolved
         }
 
