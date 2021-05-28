@@ -33,7 +33,8 @@ class CrimeFragment : Fragment() {
         super.onCreate(savedInstanceState)
         crime = Crime()
         val crimeId: UUID = arguments?.getSerializable(ARG_CRIME_ID) as UUID
-        Log.d(TAG, "args bundle: $crimeId")
+//        Log.d(TAG, "args bundle: $crimeId")
+        crimeDetailViewModel.loadCrime(crimeId)
     }
 
     override fun onCreateView(
