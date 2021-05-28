@@ -3,7 +3,6 @@ package com.riis.criminalintent2
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Query
-import com.riis.criminalintent2.Crime
 import java.util.*
 
 @Dao
