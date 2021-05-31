@@ -5,25 +5,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.fragment_first.*
+import androidx.navigation.fragment.navArgs
+import kotlinx.android.synthetic.main.fragment_second.*
 
-class FirstFragment : Fragment() {
+class SecondFragment : Fragment() {
+
+    private val safeArgs: SecondFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        return inflater.inflate(R.layout.fragment_second, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        button.setOnClickListener{
-            val directions = FirstFragmentDirections.actionFirstToSecond(arg1=1234, arg2="abcd")
-            findNavController().navigate(directions)
-        }
+        arg1TextView.text = safeArgs.arg1.toString()
+        arg2TextView.text = safeArgs.arg2
     }
-}
 
+}
