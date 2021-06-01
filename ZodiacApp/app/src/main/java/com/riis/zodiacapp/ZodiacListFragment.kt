@@ -45,11 +45,17 @@ class ZodiacListFragment : Fragment() {
         zodiacRecyclerView = view.findViewById(R.id.zodiac_recycler_view) as RecyclerView
         zodiacRecyclerView.layoutManager = GridLayoutManager(context, 2)
 
-        val dividerItemDecoration = DividerItemDecoration(
+        val dividerItemDecorationVertical = DividerItemDecoration(
             zodiacRecyclerView.context,
-            (zodiacRecyclerView.layoutManager as LinearLayoutManager).orientation
+            LinearLayoutManager.VERTICAL
         )
-        zodiacRecyclerView.addItemDecoration(dividerItemDecoration)
+
+        val dividerItemDecorationHorizontal = DividerItemDecoration(
+            zodiacRecyclerView.context,
+            LinearLayoutManager.HORIZONTAL
+        )
+        zodiacRecyclerView.addItemDecoration(dividerItemDecorationVertical)
+        zodiacRecyclerView.addItemDecoration(dividerItemDecorationHorizontal)
 
         return view
     }
