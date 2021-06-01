@@ -7,7 +7,7 @@
     <fragment
             android:id="@+id/zodiacListFragment"
             android:name="com.riis.zodiacapp.ZodiacListFragment"
-            android:label="ZodiacListFragment" >
+            android:label="ZodiacListFragment">
         <action
                 android:id="@+id/action_list_to_detail_view"
                 app:destination="@id/zodiacDetailViewFragment" />
@@ -15,7 +15,7 @@
     <fragment
             android:id="@+id/zodiacDetailViewFragment"
             android:name="com.riis.zodiacapp.ZodiacDetailViewFragment"
-            android:label="ZodiacDetailViewFragment" >
+            android:label="ZodiacDetailViewFragment">
         <argument
                 android:name="name"
                 app:argType="string"
