@@ -10,7 +10,11 @@
             android:label="ZodiacListFragment">
         <action
                 android:id="@+id/action_list_to_detail_view"
-                app:destination="@id/zodiacDetailViewFragment" />
+                app:destination="@id/zodiacDetailViewFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_enter_anim"
+                app:popExitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
             android:id="@+id/zodiacDetailViewFragment"
