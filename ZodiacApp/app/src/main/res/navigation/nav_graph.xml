@@ -32,5 +32,12 @@
                 android:name="month"
                 app:argType="string"
                 android:defaultValue="month" />
+        <argument
+                android:name="id"
+                app:argType="integer"
+                android:defaultValue="-69" />
+        <argument
+                android:name="images"
+                app:argType="integer[]" />
     </fragment>
 </navigation>

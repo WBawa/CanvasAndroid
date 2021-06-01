@@ -72,7 +72,7 @@ class ZodiacListFragment : Fragment() {
         init {
             view.setOnClickListener {
                 Toast.makeText(context, "${sign.name} pressed!", Toast.LENGTH_SHORT).show()
-                val directions = ZodiacListFragmentDirections.actionListToDetailView(name = sign.name, description = sign.description, symbol = sign.symbol, month = sign.month)
+                val directions = ZodiacListFragmentDirections.actionListToDetailView(name = sign.name, description = sign.description, symbol = sign.symbol, month = sign.month, id = sign.id, images = signImages.toIntArray())
                 findNavController().navigate(directions)
             }
         }
