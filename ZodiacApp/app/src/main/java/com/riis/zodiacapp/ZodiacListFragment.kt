@@ -100,13 +100,6 @@ class ZodiacListFragment : Fragment() {
                 }
             }
         )
-
-//        view.setOnClickListener {
-//            Log.d(TAG, "WHAT'S UP HOES")
-//            val directions = ZodiacListFragmentDirections.actionListToDetailView(name = "sign.name", description = "sign.description", symbol = "sign.symbol", month = "sign.month")
-//            findNavController().navigate(directions)
-//        }
-
     }
 
     private fun updateUI(signs: List<Sign>) {
