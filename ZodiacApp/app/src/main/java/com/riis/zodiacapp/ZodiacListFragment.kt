@@ -1,11 +1,6 @@
 package com.riis.zodiacapp
 
-import android.content.res.AssetManager
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,9 +14,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.io.InputStream
-import java.io.OutputStream
-import java.lang.Exception
 
 
 private const val TAG = "ZodiacListFragment"
@@ -30,9 +22,11 @@ class ZodiacListFragment : Fragment() {
     private lateinit var zodiacRecyclerView: RecyclerView
     private var adapter: ZodiacAdapter? = ZodiacAdapter(emptyList())
 
-    private var signImages = listOf(R.drawable.aries, R.drawable.taurus, R.drawable.gemini,
-    R.drawable.cancer, R.drawable.leo, R.drawable.virgo, R.drawable.libra, R.drawable.scorpio,
-    R.drawable.sagittarius, R.drawable.capricorn, R.drawable.aquarius, R.drawable.pisces)
+    private var signImages = listOf(
+        R.drawable.aries, R.drawable.taurus, R.drawable.gemini,
+        R.drawable.cancer, R.drawable.leo, R.drawable.virgo, R.drawable.libra, R.drawable.scorpio,
+        R.drawable.sagittarius, R.drawable.capricorn, R.drawable.aquarius, R.drawable.pisces
+    )
 
     private val zodiacListViewModel: ZodiacListViewModel by lazy {
         ViewModelProviders.of(this).get(ZodiacListViewModel::class.java)
@@ -68,7 +62,7 @@ class ZodiacListFragment : Fragment() {
         private lateinit var sign: Sign
 
         init {
-            view.setOnClickListener{
+            view.setOnClickListener {
                 Toast.makeText(context, "${sign.name} pressed!", Toast.LENGTH_SHORT).show()
             }
         }
@@ -77,49 +71,11 @@ class ZodiacListFragment : Fragment() {
             sign = zodiac
             zodiacTextView.text = sign.name
 
-            Log.d(TAG, sign.name)
-            Log.d(TAG, "${sign.id}")
-            Log.d(TAG, " ")
-
             try {
                 imageView.setImageResource(signImages[sign.id - 1])
             } catch (e: Exception) {
                 imageView.setImageResource(R.drawable.pisces)
             }
-
-//            val tmp = context?.assets?.open("images/${sign.name.toLowerCase()}.webp")
-//            val tmp : InputStream? = context?.assets?.open("images/aries.png")
-
-//            val bitmapFactory = BitmapFactory.decodeStream(tmp)
-//            imageView.setImageBitmap(bitmapFactory)
-
-//            if (sign.name == "Aries") {
-//                imageView.setImageResource(R.drawable.aries)
-//            } else if (sign.name == "Taurus") {
-//                imageView.setImageResource(R.drawable.taurus)
-//            } else if (sign.name == "Gemini") {
-//                imageView.setImageResource(R.drawable.gemini)
-//            } else if (sign.name == "Cancer") {
-//                imageView.setImageResource(R.drawable.cancer)
-//            } else if (sign.name == "Leo") {
-//                imageView.setImageResource(R.drawable.leo)
-//            } else if (sign.name == "Virgo") {
-//                imageView.setImageResource(R.drawable.virgo)
-//            } else if (sign.name == "Libra") {
-//
-//            }
-
-
-//           val resId = resources.getIdentifier(
-//               "images/${sign.name.toLowerCase()}.webp",
-//               "drawable",
-//               "drawable"
-//           )
-
-//           val d : Drawable = Drawable.createFromStream(tmp, null)
-//
-//           imageView.setImageDrawable(d)
-
 
         }
     }
