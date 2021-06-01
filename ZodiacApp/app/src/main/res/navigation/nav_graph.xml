@@ -7,5 +7,30 @@
     <fragment
             android:id="@+id/zodiacListFragment"
             android:name="com.riis.zodiacapp.ZodiacListFragment"
-            android:label="ZodiacListFragment" />
+            android:label="ZodiacListFragment" >
+        <action
+                android:id="@+id/action_list_to_detail_view"
+                app:destination="@id/zodiacDetailViewFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/zodiacDetailViewFragment"
+            android:name="com.riis.zodiacapp.ZodiacDetailViewFragment"
+            android:label="ZodiacDetailViewFragment" >
+        <argument
+                android:name="name"
+                app:argType="string"
+                android:defaultValue="name" />
+        <argument
+                android:name="description"
+                app:argType="string"
+                android:defaultValue="description" />
+        <argument
+                android:name="symbol"
+                app:argType="string"
+                android:defaultValue="symbol" />
+        <argument
+                android:name="month"
+                app:argType="string"
+                android:defaultValue="month" />
+    </fragment>
 </navigation>

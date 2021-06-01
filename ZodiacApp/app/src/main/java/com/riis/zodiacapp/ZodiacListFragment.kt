@@ -1,6 +1,7 @@
 package com.riis.zodiacapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.navigation.fragment.findNavController
 
 
 private const val TAG = "ZodiacListFragment"
@@ -70,6 +72,8 @@ class ZodiacListFragment : Fragment() {
         init {
             view.setOnClickListener {
                 Toast.makeText(context, "${sign.name} pressed!", Toast.LENGTH_SHORT).show()
+                val directions = ZodiacListFragmentDirections.actionListToDetailView(name = sign.name, description = sign.description, symbol = sign.symbol, month = sign.month)
+                findNavController().navigate(directions)
             }
         }
 
@@ -90,6 +94,13 @@ class ZodiacListFragment : Fragment() {
                 }
             }
         )
+
+//        view.setOnClickListener {
+//            Log.d(TAG, "WHAT'S UP HOES")
+//            val directions = ZodiacListFragmentDirections.actionListToDetailView(name = "sign.name", description = "sign.description", symbol = "sign.symbol", month = "sign.month")
+//            findNavController().navigate(directions)
+//        }
+
     }
 
     private fun updateUI(signs: List<Sign>) {
