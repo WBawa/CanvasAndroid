@@ -77,12 +77,7 @@ class ZodiacListFragment : Fragment() {
             sign = zodiac
             zodiacTextView.text = sign.name
 
-            try {
-                imageView.setImageResource(signImages[sign.id - 1])
-            } catch (e: Exception) {
-                imageView.setImageResource(R.drawable.pisces)
-            }
-
+            imageView.setImageResource(signImages[sign.id - 1])
         }
     }
 
