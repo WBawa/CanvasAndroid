@@ -62,7 +62,7 @@ class ZodiacListFragment : Fragment() {
 
     private inner class ZodiacHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        private val zodiacTextView: TextView = itemView.findViewById(R.id.sign_name)
+        private val zodiacTextView: TextView = itemView.findViewById(R.id.detail_sign_name)
         private val imageView: ImageView = itemView.findViewById(R.id.imageView)
 
         private lateinit var sign: Sign
@@ -76,7 +76,6 @@ class ZodiacListFragment : Fragment() {
         fun bind(zodiac: Sign) {
             sign = zodiac
             zodiacTextView.text = sign.name
-
             imageView.setImageResource(signImages[sign.id - 1])
         }
     }
