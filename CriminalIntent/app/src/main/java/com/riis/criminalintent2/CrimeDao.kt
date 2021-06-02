@@ -2,6 +2,7 @@ package com.riis.criminalintent2
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
 import java.util.*
@@ -16,4 +17,7 @@ interface CrimeDao {
 
     @Update
     fun updateCrime(crime: Crime)
+
+    @Insert
+    fun addCrime(crime: Crime)
 }
