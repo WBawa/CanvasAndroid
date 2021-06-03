@@ -1,8 +1,10 @@
 package com.riis.criminalintent2
 
 import android.app.Activity
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.text.Editable
@@ -19,15 +21,19 @@ import androidx.lifecycle.ViewModelProviders
 import java.util.*
 import androidx.lifecycle.Observer
 import android.text.format.DateFormat
+import android.widget.TimePicker
+import androidx.annotation.RequiresApi
 
 private const val ARG_CRIME_ID = "crime_id"
 private const val TAG = "CrimeFragment"
 private const val DIALOG_DATE = "DialogDate"
+private const val DIALOG_TIME = "DialogTime"
 private const val REQUEST_DATE = 0
+private const val REQUEST_TIME = 0
 private const val DATE_FORMAT = "EEE, MMM, dd"
 private const val REQUEST_CONTACT = 1
 
-class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
+class CrimeFragment : Fragment(), DatePickerFragment.Callbacks, TimePickerDialog.OnTimeSetListener {
 
     private lateinit var crime: Crime
     private lateinit var titleField: EditText
@@ -35,6 +41,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
     private lateinit var solvedCheckBox: CheckBox
     private lateinit var reportButton: Button
     private lateinit var suspectButton: Button
+    private lateinit var setTimeButton: Button
 
     private val crimeDetailViewModel: CrimeDetailViewModel by lazy {
         ViewModelProviders.of(this).get(CrimeDetailViewModel::class.java)
@@ -60,7 +67,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
         solvedCheckBox = view.findViewById(R.id.crime_solved) as CheckBox
         reportButton = view.findViewById(R.id.crime_report)
         suspectButton = view.findViewById(R.id.crime_suspect)
-
+        setTimeButton = view.findViewById(R.id.set_time_button)
 
         return view
     }
@@ -79,6 +86,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
         )
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onStart() {
         super.onStart()
 
@@ -107,6 +115,15 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
             DatePickerFragment.newInstance(crime.date).apply {
                 setTargetFragment(this@CrimeFragment, REQUEST_DATE)
                 show(this@CrimeFragment.requireFragmentManager(), DIALOG_DATE)
+            }
+        }
+
+        setTimeButton.setOnClickListener {
+//            val timePickerDialog = TimePickerDialog(this@MainActivity, this@MainActivity, hour, minute,
+//                DateFormat.is24HourFormat(this))
+            TimePickerFragment.newInstance(crime.date).apply {
+                setTargetFragment(this@CrimeFragment, REQUEST_TIME)
+                show(this@CrimeFragment.requireFragmentManager(), DIALOG_TIME)
             }
         }
 
@@ -170,7 +187,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
 
     private fun updateUI() {
         titleField.setText(crime.title)
-        dateButton.text = crime.date.toString()
+        dateButton.text = crime.date.toString().substring(0, 10)
         solvedCheckBox.apply {
             isChecked = crime.isSolved
             jumpDrawablesToCurrentState()
@@ -205,6 +222,10 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
                 }
             }
         }
+    }
+
+    override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
+        TODO("Not yet implemented")
     }
 
 }
