@@ -34,7 +34,6 @@ class TimePickerFragment : DialogFragment() {
     }
 
     companion object {
-        @RequiresApi(Build.VERSION_CODES.O)
         fun newInstance(time: Date): TimePickerFragment {
             val args = Bundle().apply {
                 putSerializable(ARG_DATE, time)

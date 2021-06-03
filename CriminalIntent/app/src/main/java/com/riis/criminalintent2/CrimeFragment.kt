@@ -188,6 +188,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks, TimePickerDialog
     private fun updateUI() {
         titleField.setText(crime.title)
         dateButton.text = crime.date.toString().substring(0, 10)
+        setTimeButton.text = crime.date.toString().substring(10, 23)
         solvedCheckBox.apply {
             isChecked = crime.isSolved
             jumpDrawablesToCurrentState()
