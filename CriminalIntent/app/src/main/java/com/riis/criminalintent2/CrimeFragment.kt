@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.provider.ContactsContract
 import android.text.Editable
 import android.text.TextWatcher
+import android.text.format.DateFormat
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -16,13 +17,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
-import java.util.*
-import androidx.lifecycle.Observer
-import android.text.format.DateFormat
 import android.widget.TimePicker
 import androidx.annotation.RequiresApi
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import java.util.*
 
 private const val ARG_CRIME_ID = "crime_id"
 private const val TAG = "CrimeFragment"
@@ -78,10 +78,10 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks, TimePickerDialog
         crimeDetailViewModel.crimeLiveData.observe(
             viewLifecycleOwner,
             Observer { crime ->
-               crime?.let {
-                   this.crime = crime
-                   updateUI()
-               }
+                crime?.let {
+                    this.crime = crime
+                    updateUI()
+                }
             }
         )
     }
@@ -132,13 +132,14 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks, TimePickerDialog
                 type = "text/plain"
                 putExtra(Intent.EXTRA_TEXT, getCrimeReport())
                 putExtra(Intent.EXTRA_SUBJECT, getString(R.string.crime_report_suspect))
-            }.also {
-                intent -> startActivity(intent)
+            }.also { intent ->
+                startActivity(intent)
             }
         }
 
         suspectButton.apply {
-            val pickContactIntent = Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI)
+            val pickContactIntent =
+                Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI)
 
             setOnClickListener {
                 startActivityForResult(pickContactIntent, REQUEST_CONTACT)
@@ -208,7 +209,15 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks, TimePickerDialog
 
                 val queryFields = arrayOf(ContactsContract.Contacts.DISPLAY_NAME)
 
-                val cursor = contactUri?.let { requireActivity().contentResolver.query(it, queryFields, null, null, null) }
+                val cursor = contactUri?.let {
+                    requireActivity().contentResolver.query(
+                        it,
+                        queryFields,
+                        null,
+                        null,
+                        null
+                    )
+                }
 
                 cursor?.use {
                     if (it.count == 0) {

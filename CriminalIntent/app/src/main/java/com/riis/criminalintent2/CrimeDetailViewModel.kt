@@ -12,8 +12,8 @@ class CrimeDetailViewModel : ViewModel() {
     private val crimeIdLiveData = MutableLiveData<UUID>()
 
     var crimeLiveData: LiveData<Crime?> =
-        Transformations.switchMap(crimeIdLiveData) {
-            crimeId -> crimeRepository.getCrime(crimeId)
+        Transformations.switchMap(crimeIdLiveData) { crimeId ->
+            crimeRepository.getCrime(crimeId)
         }
 
     fun loadCrime(crimeId: UUID) {
