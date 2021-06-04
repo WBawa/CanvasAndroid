@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.isVisible
@@ -27,6 +28,8 @@ class CrimeListFragment : Fragment() {
     private var callbacks: Callbacks? = null
 
     private lateinit var crimeRecyclerView: RecyclerView
+    private lateinit var addEntryButton: Button
+    private lateinit var addEntryTextView: TextView
     private var adapter: CrimeAdapter? = CrimeAdapter(emptyList())
 
     private val crimeListViewModel: CrimeListViewModel by lazy {
@@ -51,6 +54,18 @@ class CrimeListFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_crime_list, container, false)
         crimeRecyclerView = view.findViewById(R.id.crime_recycler_view) as RecyclerView
+        addEntryButton = view.findViewById(R.id.add_entry_button)
+        addEntryTextView = view.findViewById(R.id.add_entry_textview)
+
+        addEntryButton.setOnClickListener {
+            val crime = Crime()
+            crimeListViewModel.addCrime(crime)
+            callbacks?.onCrimeSelected(crime.id)
+        }
+
+        addEntryTextView.isVisible = false
+        addEntryButton.isVisible = false
+
         crimeRecyclerView.layoutManager = LinearLayoutManager(context)
 
         val dividerItemDecoration = DividerItemDecoration(
@@ -72,6 +87,15 @@ class CrimeListFragment : Fragment() {
             Observer { crimes ->
                 crimes?.let {
                     Log.i(TAG, "Got crimes ${crimes.size}")
+
+                    if (crimes.isNotEmpty()) {
+                        addEntryTextView.isVisible = false
+                        addEntryButton.isVisible = false
+                    } else {
+                        addEntryTextView.isVisible = true
+                        addEntryButton.isVisible = true
+                    }
+
                     updateUI(crimes)
                 }
             }

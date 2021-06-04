@@ -16,5 +16,7 @@
     <string name="crime_report_subject">CriminalIntent Crime Report</string>
     <string name="send_report">Send crime report via</string>
     <string name="set_time">SET TIME</string>
+    <string name="add_crime">Add Crime</string>
+    <string name="there_are_no_entries_would_you_like_to_make_one">There are no entries! Would you like to make one?</string>
 
 </resources>
