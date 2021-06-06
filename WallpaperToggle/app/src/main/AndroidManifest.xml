@@ -12,6 +12,8 @@
         <receiver android:name=".NewAppWidget" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.riis.widgets.NewAppWidget.ACTION_WIDGET_WALLPAPER_ONE" />
+                <action android:name="com.riis.widgets.NewAppWidget.ACTION_WIDGET_WALLPAPER_TWO" />
             </intent-filter>
 
             <meta-data

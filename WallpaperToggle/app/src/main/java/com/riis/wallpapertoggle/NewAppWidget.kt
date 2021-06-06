@@ -6,12 +6,18 @@ import android.appwidget.AppWidgetProvider
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.widget.RemoteViews
 import android.widget.TextView
+import android.widget.Toast
 
 /**
  * Implementation of App Widget functionality.
  */
+
+private const val ACTION_WIDGET_WALLPAPER_ONE = "WallpaperOne"
+private const val ACTION_WIDGET_WALLPAPER_TWO = "WallpaperTwo"
+
 class NewAppWidget : AppWidgetProvider() {
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
         // There may be multiple widgets active, so update all of them
@@ -20,14 +26,19 @@ class NewAppWidget : AppWidgetProvider() {
         }
 
         var remoteViews: RemoteViews = RemoteViews(context.packageName, R.layout.new_app_widget)
-        var watchWidget: ComponentName = ComponentName(context, NewAppWidget::class.java)
 
-        var intent: Intent = Intent(context, NewAppWidget::class.java)
-        intent.action = AppWidgetManager.ACTION_APPWIDGET_UPDATE
 
-        var pendingIntent: PendingIntent = PendingIntent.getBroadcast()
+        var active = Intent(context, NewAppWidget::class.java)
+        active.action = ACTION_WIDGET_WALLPAPER_ONE
+        var actionPendingIntent = PendingIntent.getBroadcast(context, 0, active, 0)
+        remoteViews.setOnClickPendingIntent(R.id.wallpaper1, actionPendingIntent)
 
-        appWidgetManager.updateAppWidget(watchWidget, remoteViews);
+        active = Intent(context, NewAppWidget::class.java)
+        active.action = ACTION_WIDGET_WALLPAPER_TWO
+        actionPendingIntent = PendingIntent.getBroadcast(context, 0, active, 0)
+        remoteViews.setOnClickPendingIntent(R.id.wallpaper2, actionPendingIntent)
+
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
     }
 
     override fun onEnabled(context: Context) {
@@ -36,6 +47,22 @@ class NewAppWidget : AppWidgetProvider() {
 
     override fun onDisabled(context: Context) {
         // Enter relevant functionality for when the last widget is disabled
+    }
+
+    override fun onReceive(context: Context?, intent: Intent?) {
+        when (intent?.action) {
+            (ACTION_WIDGET_WALLPAPER_ONE) -> {
+                Toast.makeText(context, "Wallpaper One", Toast.LENGTH_SHORT).show()
+                Log.d("NewAppWidget", "this is a test if wallpaper 1 is working")
+            }
+            (ACTION_WIDGET_WALLPAPER_TWO) -> {
+                Toast.makeText(context, "Wallpaper Two", Toast.LENGTH_SHORT).show()
+                Log.d("NewAppWidget", "this is a test if wallpaper TWO is working")
+            }
+            else -> {
+                super.onReceive(context, intent)
+            }
+        }
     }
 }
 
