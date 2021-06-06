@@ -10,6 +10,9 @@ import android.util.Log
 import android.widget.RemoteViews
 import android.widget.TextView
 import android.widget.Toast
+import android.app.WallpaperManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 
 /**
  * Implementation of App Widget functionality.
@@ -19,14 +22,17 @@ private const val ACTION_WIDGET_WALLPAPER_ONE = "WallpaperOne"
 private const val ACTION_WIDGET_WALLPAPER_TWO = "WallpaperTwo"
 
 class NewAppWidget : AppWidgetProvider() {
+
+    private lateinit var wallpaperManager: WallpaperManager
+
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
+        wallpaperManager = WallpaperManager.getInstance(context)
         // There may be multiple widgets active, so update all of them
         for (appWidgetId in appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId)
         }
 
         var remoteViews: RemoteViews = RemoteViews(context.packageName, R.layout.new_app_widget)
-
 
         var active = Intent(context, NewAppWidget::class.java)
         active.action = ACTION_WIDGET_WALLPAPER_ONE
@@ -43,6 +49,8 @@ class NewAppWidget : AppWidgetProvider() {
 
     override fun onEnabled(context: Context) {
         // Enter relevant functionality for when the first widget is created
+
+        wallpaperManager = WallpaperManager.getInstance(context)
     }
 
     override fun onDisabled(context: Context) {
@@ -50,14 +58,19 @@ class NewAppWidget : AppWidgetProvider() {
     }
 
     override fun onReceive(context: Context?, intent: Intent?) {
+        wallpaperManager = WallpaperManager.getInstance(context)
         when (intent?.action) {
             (ACTION_WIDGET_WALLPAPER_ONE) -> {
                 Toast.makeText(context, "Wallpaper One", Toast.LENGTH_SHORT).show()
                 Log.d("NewAppWidget", "this is a test if wallpaper 1 is working")
+                val image: Bitmap = BitmapFactory.decodeResource(context?.resources, R.drawable.onda)
+                wallpaperManager.setBitmap(image)
             }
             (ACTION_WIDGET_WALLPAPER_TWO) -> {
                 Toast.makeText(context, "Wallpaper Two", Toast.LENGTH_SHORT).show()
                 Log.d("NewAppWidget", "this is a test if wallpaper TWO is working")
+                val image: Bitmap = BitmapFactory.decodeResource(context?.resources, R.drawable.yourname)
+                wallpaperManager.setBitmap(image)
             }
             else -> {
                 super.onReceive(context, intent)
