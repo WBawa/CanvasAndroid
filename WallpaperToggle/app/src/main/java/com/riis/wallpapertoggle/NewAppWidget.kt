@@ -13,6 +13,8 @@ import android.widget.Toast
 import android.app.WallpaperManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.os.Build
+import androidx.annotation.RequiresApi
 
 /**
  * Implementation of App Widget functionality.
@@ -57,20 +59,19 @@ class NewAppWidget : AppWidgetProvider() {
         // Enter relevant functionality for when the last widget is disabled
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onReceive(context: Context?, intent: Intent?) {
         wallpaperManager = WallpaperManager.getInstance(context)
         when (intent?.action) {
             (ACTION_WIDGET_WALLPAPER_ONE) -> {
                 Toast.makeText(context, "Wallpaper One", Toast.LENGTH_SHORT).show()
                 Log.d("NewAppWidget", "this is a test if wallpaper 1 is working")
-                val image: Bitmap = BitmapFactory.decodeResource(context?.resources, R.drawable.onda)
-                wallpaperManager.setBitmap(image)
+                wallpaperManager.setResource(R.drawable.onda)
             }
             (ACTION_WIDGET_WALLPAPER_TWO) -> {
                 Toast.makeText(context, "Wallpaper Two", Toast.LENGTH_SHORT).show()
                 Log.d("NewAppWidget", "this is a test if wallpaper TWO is working")
-                val image: Bitmap = BitmapFactory.decodeResource(context?.resources, R.drawable.yourname)
-                wallpaperManager.setBitmap(image)
+                wallpaperManager.setResource(R.drawable.yourname)
             }
             else -> {
                 super.onReceive(context, intent)
