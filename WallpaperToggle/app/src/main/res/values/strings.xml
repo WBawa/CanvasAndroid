@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WallpaperToggle</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+</resources>
