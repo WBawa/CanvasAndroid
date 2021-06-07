@@ -81,19 +81,20 @@ class NewAppWidget : AppWidgetProvider() {
 
     @SuppressLint("UseCompatLoadingForDrawables")
     fun setWallpaper(context: Context?, image: Int) {
-        val bitmap: Bitmap = (context?.getDrawable(image) as BitmapDrawable).bitmap
+//        val bitmap: Bitmap = (context?.getDrawable(image) as BitmapDrawable).bitmap
+//
+//        val phoneHeight: Int = context.resources.displayMetrics.heightPixels
+//        val phoneWidth: Int = context.resources.displayMetrics.widthPixels
+//
+//        val imageHeight = bitmap.height
+//        val imageWidth = bitmap.width
+//
+////        val scaled = Bitmap.createScaledBitmap(bitmap, phoneWidth, phoneHeight, false)
+//
+//        val image = Bitmap.createBitmap(bitmap, (abs(imageWidth - phoneWidth) / 1f).toInt(), 0, imageWidth - (abs(imageWidth - phoneWidth) / 1f).toInt(), imageHeight)
 
-        val phoneHeight: Int = context.resources.displayMetrics.heightPixels
-        val phoneWidth: Int = context.resources.displayMetrics.widthPixels
-
-        val imageHeight = bitmap.height
-        val imageWidth = bitmap.width
-
-//        val scaled = Bitmap.createScaledBitmap(bitmap, phoneWidth, phoneHeight, false)
-
-        val image = Bitmap.createBitmap(bitmap, (abs(imageWidth - phoneWidth) / 1f).toInt(), 0, imageWidth - (abs(imageWidth - phoneWidth) / 1f).toInt(), imageHeight)
-
-        wallpaperManager.setBitmap(image)
+//        wallpaperManager.setBitmap(image)
+        wallpaperManager.setResource(image)
     }
 }
 
