@@ -34,7 +34,7 @@ class PhotoGalleryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        photoGalleryViewModel.gallerItemLiveData.observe(
+        photoGalleryViewModel.galleryItemLiveData.observe(
             viewLifecycleOwner,
             Observer { galleryItems ->
                 Log.d(TAG, "Have gallery items from ViewModel $galleryItems")

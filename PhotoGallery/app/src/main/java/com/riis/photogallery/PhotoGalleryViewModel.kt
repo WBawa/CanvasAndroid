@@ -4,6 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 
 class PhotoGalleryViewModel : ViewModel() {
-    val gallerItemLiveData: LiveData<List<GalleryItem>> = FlickrFetchr().fetchPhotos()
+    val galleryItemLiveData: LiveData<List<GalleryItem>> = FlickrFetchr().fetchPhotos()
 
 }

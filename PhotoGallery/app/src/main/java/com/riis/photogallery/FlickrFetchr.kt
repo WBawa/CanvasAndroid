@@ -15,7 +15,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 private const val TAG = "FlickrFetchr"
 
 class FlickrFetchr {
-    private lateinit var flickrApi: FlickrApi
+    private var flickrApi: FlickrApi
 
     init {
         val retrofit: Retrofit = Retrofit.Builder()
