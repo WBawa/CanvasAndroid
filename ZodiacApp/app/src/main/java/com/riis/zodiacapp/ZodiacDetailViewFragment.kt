@@ -1,6 +1,7 @@
 package com.riis.zodiacapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.riis.zodiacapp.api.HoroscopeApi
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+
+private const val TAG = "ZodiacDetailView"
 
 class ZodiacDetailViewFragment : Fragment() {
 
@@ -29,6 +38,26 @@ class ZodiacDetailViewFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val retrofit: Retrofit = Retrofit.Builder()
+            .baseUrl("http://sandipbgt.com/")
+            .addConverterFactory(ScalarsConverterFactory.create())
+            .build()
+
+        val horoscopeApi: HoroscopeApi = retrofit.create(HoroscopeApi::class.java)
+
+        val request: Call<String> = horoscopeApi.fetchHoroscope(safeArgs.name.lowercase())
+        Log.d(TAG, safeArgs.name)
+
+        request.enqueue((object : Callback<String> {
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                Log.e(TAG, "failed to fetch horoscope", t)
+            }
+
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                Log.d(TAG, "Response received: ${response.body()}")
+            }
+        }))
 
         images = safeArgs.images
 

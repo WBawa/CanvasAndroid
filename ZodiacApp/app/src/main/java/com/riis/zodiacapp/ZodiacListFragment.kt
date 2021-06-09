@@ -43,24 +43,6 @@ class ZodiacListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("http://sandipbgt.com/")
-            .addConverterFactory(ScalarsConverterFactory.create())
-            .build()
-
-        val horoscopeApi: HoroscopeApi = retrofit.create(HoroscopeApi::class.java)
-
-        val request: Call<String> = horoscopeApi.fetchHoroscope()
-
-        request.enqueue((object : Callback<String> {
-            override fun onFailure(call: Call<String>, t: Throwable) {
-                Log.e(TAG, "failed to fetch horoscope", t)
-            }
-
-            override fun onResponse(call: Call<String>, response: Response<String>) {
-                Log.d(TAG, "Response received: ${response.body()}")
-            }
-        }))
     }
 
     override fun onCreateView(
